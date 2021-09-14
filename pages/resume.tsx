@@ -1,52 +1,54 @@
-import { languages, tools } from '../data'
 import Bar from '../components/Bar'
+import { languages, tools } from '../data'
+import { motion } from 'framer-motion'
+import { fadeInUp, routeAnimation } from '../animations'
 
 const resume = () => {
+   
+    
     return (
-        <div className='px-6 py-2'>
+        <motion.div className='px-6 py-2' variants={routeAnimation} initial="initial" animate="animate" exit="exit">
                 {/*education and exp*/}    
 
                 <div className='grid gap-6 md:grid-cols-2'>
 
-                    <div>
+                    <motion.div variants={fadeInUp} initial="initial" animate="animate">
                         <h5 className='my-3 text-2xl font-bold'>Education</h5>
                           <div>
                             <h5 className='my-2 text-xl font-bold'>BCom Strategic Brand Management</h5>
                             <p className='font-semibold'>Vega School of Brand Leadership</p>
                           </div>
-                    </div> 
-                    <div>
+                    </motion.div> 
+                    <motion.div variants={fadeInUp} initial="initial" animate="animate">
                         <h5 className='my-3 text-2xl font-bold'>Experience</h5>
                           <div>
                             <h5 className='my-2 text-xl font-bold'>BCom Strategic Brand Management</h5>
                             <p className='font-semibold'>Vega School of Brand Leadership</p>
                           </div>
-                    </div> 
+                    </motion.div> 
                 </div>
                 
-                {/*languages and tools*/}  
-
-                <div className="grid gap-6 md:grid-cols-2">
-                    
-                <div>
-                    <h5 className="my-3 text-2xl font-bold">Languages & Frameworks</h5>
-                    <div className='my-2'>
-                        {
-                            languages.map(language=><Bar data={language} key={language.name}/>)
-                        }
-                    </div>
-                </div>   
+                  {/*Languages & Tools */}
+        <div className="grid gap-9 md:grid-cols-2">
+         <div>
+             <h5 className="my-3 text-2xl font-bold">Language & Framework</h5>
+            <div className="my-2">
+            {languages.map((language, i) => (
+              <Bar value={language} key={i} />
+            ))}
+          </div>
+        </div> 
                 <div>
                     <h5 className="my-3 text-2xl font-bold">Tools & Software</h5>
                     <div className='my-2'>
-                        {
-                            tools.map(tool=><Bar data={tool} key={tool.name}/>)
-                        }
+                      {tools.map((tool, i) => (
+                        <Bar value={tool} key={i} />
+                   ))}
                     </div>
                 </div> 
 
                 </div>
-        </div>
+        </motion.div>
     )
 }
 
