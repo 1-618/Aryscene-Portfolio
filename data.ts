@@ -1,7 +1,7 @@
 import { RiComputerLine } from 'react-icons/ri'
 import { FaServer } from "react-icons/fa";
 import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
-import { GiPerspectiveDiceSixFacesRandom } from "react-icons/Gi";
+import { GiPerspectiveDiceSixFacesRandom } from "react-icons/gi";
 import { IService, ISkill, IProject } from './type'
 import { VscExtensions } from "react-icons/vsc"
 import { SiGraphql, SiJavascript, SiTypescript, SiMongodb, SiPython, 
