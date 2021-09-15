@@ -49,7 +49,7 @@ module.exports = {
       boxShadow:["dark"],
       backGround:["dark"],
       backdropFilter:["dark"],
-      border:["dark"]
+      border:["dark"],
     },
   },
   plugins: [],
