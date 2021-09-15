@@ -1,210 +1,201 @@
 import { RiComputerLine } from 'react-icons/ri'
 import { FaServer } from "react-icons/fa";
 import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
-import { MdDeveloperMode } from "react-icons/md";
+import { GiPerspectiveDiceSixFacesRandom } from "react-icons/Gi";
 import { IService, ISkill, IProject } from './type'
-import { BsCircleFill } from "react-icons/bs";
+import { VscExtensions } from "react-icons/vsc"
+import { SiGraphql, SiJavascript, SiTypescript, SiMongodb, SiPython, 
+         SiNodeDotJs, SiReact, SiMaterialUi, SiTailwindcss, SiBootstrap,
+         SiPostgresql, SiAmazonaws, SiVim , SiDjango, SiNextDotJs, SiGit, SiWordpress, SiEthereum
+        } from "react-icons/si";
 
 export const services:IService[] = [
     {
       Icon: RiComputerLine,
-      title: "Frontend Development",
+      title: "Frontend",
       about:
-        "I can build a beautiful and scalable SPA using <b> HTML</b>,<b>CSS</b>   and <b>React.js</b> ",
+        "<b>React.js</b> and UI frameworks on the client side",
     },
-    {
+   /* {
       Icon: FaServer,
       title: "Backend  Development",
       about:
-        "handle database, server, api using <b>Express </b> & other popular frameworks",
-    },
+        "Handle databases, server, api using <b>Express </b> & other popular frameworks",
+    }*/,
     {
       Icon: AiOutlineApi,
       title: "API Development",
       about:
-        "I can develop robust  REST API using <b>django-rest-api</b>  & <b>Node API</b> ",
+        "Designing REST APIs with <b>Node.js</b> and <b>Express </b> ",
     },
     {
-      Icon: MdDeveloperMode,
-      title: "Competitive Coder",
-      about: "a daily problem solver in <b>HackerRank</b>  and <b>Leet Code</b> ",
+      Icon: VscExtensions,
+      title: "Contnuous learning",
+      about: "Picking up technologies that are relevant to acheiving set goals ",
     },
     {
-      Icon: AiOutlineAntDesign,
-      title: "UI/UX designer",
+      Icon: GiPerspectiveDiceSixFacesRandom,
+      title: "Perspective",
       about:
-        "stunning user interface designer using <b>Figma</b>  and  <b>Framer</b> ",
+        "Problem solving using knowledge from a different field",
     },
-    {
+   /* {
       Icon: RiComputerLine,
       title: "Whatever",
       about:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis minima autem!",
-    },
+    },*/
   ];
 
 export const languages:ISkill[] = [
     {
-        Icon: BsCircleFill,
-        name: "Python",
-        level: "45",
+        Icon: SiJavascript,
+        name: "JavaScript",
+        level: "100",
       },
       {
-        Icon: BsCircleFill,
-        name: "Java Script",
+        Icon: SiPython,
+        name: "Python",
+        level: "90",
+      },
+      {
+        Icon: SiReact,
+        name: "React.js",
+        level: "85",
+      },
+      {
+        Icon: SiNextDotJs,
+        name: "Next.js",
         level: "60",
       },
       {
-        Icon: BsCircleFill,
-        name: "React Native",
-        level: "80",
-      },
-      {
-        Icon: BsCircleFill,
-        name: "React",
+        Icon: SiNodeDotJs,
+        name: "Node.js + Express",
         level: "70",
       },
       {
-        Icon: BsCircleFill,
-        name: "Django",
-        level: "80",
+        Icon: SiMongodb,
+        name: "MongoDB native + mongoose",
+        level: "65",
       },
       {
-        Icon: BsCircleFill,
-        name: "Bootstrap",
-        level: "80",
+        Icon: SiWordpress,
+        name: "Wordpress",
+        level: "75",
       },
+      {
+        Icon: SiGit,
+        name: "Git version control ",
+        level: "55",
+      },
+      {
+        Icon: SiMaterialUi,
+        name: "Material UI",
+        level: "70",
+      },
+      {
+        Icon: SiTailwindcss,
+        name: "Tailwind css",
+        level: "68",
+      },
+      {
+        Icon: SiBootstrap,
+        name: "Bootstrap",
+        level: "64",
+      },
+      
   ];
     
 export const tools: ISkill[] = [
       {
-        Icon: BsCircleFill,
-        name: "Figma",
-        level: "85",
+        Icon: SiTypescript,
+        name: "TypeScript",
+        level: "50",
       },
       {
-        Icon: BsCircleFill,
-        name: "Photoshop",
+        Icon: SiGraphql,
+        name: "GraphQl",
+        level: "30",
+      },
+      {
+        Icon: SiPostgresql,
+        name: "Postgresql",
         level: "45",
       },
       {
-        Icon: BsCircleFill,
-        name: "Illustrator",
-        level: "60",
+        Icon: SiDjango,
+        name: "Django",
+        level: "50",
       },
       {
-        Icon: BsCircleFill,
-        name: "Framer",
-        level: "45",
+        Icon: SiAmazonaws,
+        name: "AWS",
+        level: "34",
+      },
+      {
+        Icon: SiVim,
+        name: "Vim",
+        level: "30",
+      },
+      {
+        Icon: SiEthereum,
+        name: "Solidity",
+        level: "33",
       },
   ]; 
 
 export const projects:IProject[] = [
   { 
     id: 1,
-    name: "COVID Tracker",
+    name: "Crypto gazer",
     description:
-      "This app shows a statistical view about corona virus over the world",
-    image_path: "/images/covid.jpg",
-    deployed_url: "https://covid-19-tracker-by-sumit.web.app/",
-    github_url: "https://github.com/Dey-Sumit/covid-19-tracker",
-    category: ["react"],
-    tech_stack: ["React", "Chart.js", "Material UI"],
+      "A simple app that displays up-to-date crypto market data along with a filter-search feature",
+    image_path: "/images/crypto-gazer.png",
+    deployed_url: "https://elated-wiles-fa9b9c.netlify.app/",
+    github_url: "https://github.com/1-618/crypto-gazer",
+    category: ["react", "typescript"],
+    tech_stack: ["React", "TypeScript"],
   },{
     id: 2,
-    name: "Algorithm Visualizer",
-    image_path: "/images/algoVisual.png",
-    deployed_url: "https://visual-algorithm.web.app/",
-    github_url: "https://github.com/Dey-Sumit/algorithm-visualizer",
-    category: ["react"],
+    name: "KWIZZ-MEE! game",
+    image_path: "/images/kwizz-mee.png",
+    deployed_url: "https://zen-varahamihira-059069.netlify.app/",
+    github_url: "https://github.com/1-618/kwizz-mee-client",
+    category: ["react", "typescript", "node"],
     description:
-      "An web app which shows how an algorithm (path finding or sorting) works with cool animation",
-    tech_stack: ["React", "firebase", "Framer Motion"],
+      "A trivia game with 10 multiple choice questions from the Open trivia api",
+    tech_stack: ["React", "Typescript", "Node.js", "Express"],
   },
 
   {
     id: 3,
-    name: "Dev Talks",
-    image_path: "/images/dev.jpg",
-    deployed_url: "https://dev-talks.herokuapp.com/",
-    github_url: "https://github.com/Dey-Sumit/Dev-talks",
-    category: ["node", "mongo", "react"],
+    name: "Blog-chain",
+    image_path: "/images/kwizz-mee.jpg",
+    deployed_url: "https://zen-varahamihira-059069.netlify.app/",
+    github_url: "https://github.com/1-618/kwizz-mee-client",
+    category: ["node", "mongo", "react", "typescript"],
     description:
-      "Social Media app for developers who can share project,create posts,etc...",
+      "An open blog where anyone can sign up and post their thoughts on crypto",
     tech_stack: [
       "React",
-      "Redux",
-      "Node",
-      "Express",
-      "Mongo",
-      "REST API",
-      "Bootstrap",
+      "Typescript",
+      "Node.js",
+      "MongoDB",
+      "Firebase Auth",
+      "Reactstrap",
     ],
   },
 
   {
     id: 4,
-    name: "Realtime Chat App",
-    image_path: "/images/chatapp.jpg",
-    deployed_url: "https://sumit-chat.netlify.app/",
-    github_url: "https://github.com/Dey-Sumit/chat-app-socket.io-react-node",
-    category: ["node", "react"],
+    name: "Game of Life",
+    image_path: "/images/kwizz.jpg",
+    deployed_url: "https://zen-varahamihira-059069.netlify.app/",
+    github_url: "https://github.com/1-618/kwizz-mee-client",
+    category: ["react", "typescript"],
     description:
-      "Basic Realtime Chat App where one can create a room can talk to each other",
-    tech_stack: ["React", "Node", "Express", "Socket", "Bootstrap"],
-  },
-
-  {
-    id: 5,
-    name: "Tweeter Clone",
-    image_path: "/images/tweetme.jpg",
-    deployed_url: "http://sumaxtweetme.pythonanywhere.com/",
-    github_url: "https://github.com/Dey-Sumit/tweetme",
-    category: ["django", "react"],
-    description:
-      "First Django Project :) | Typical Social Media App where one can post,like ,comment etc",
-    tech_stack: ["React", "Django", "Django REST API"],
-  },
-
-  {
-    id: 6,
-    name: "Color Classification using tf.js",
-    image_path: "/images/color.jpg",
-    deployed_url: "!#",
-    github_url: "https://github.com/Dey-Sumit/color-classification",
-    category: ["express"],
-    description:
-      "Tried ML with JS :) | this app classifies a color using CNN algorithm in browser",
-    tech_stack: ["Express", "TensorFlow.js", "Vanilla js"],
-  },
-  {
-    id: 7,
-    name: "YouTube using YouTube ",
-    image_path: "/images/youtubeClone.png",
-    deployed_url: "https://not-utube.web.app/",
-    github_url: "https://github.com/Dey-Sumit/youtube-clone-tutorial-up",
-    category: ["express"],
-    description:
-      'Full(almost) Functional YouTube replica where one can login with his/her youtube account to enjoy "not-YouTube".User can like a video,comment on a video & Much More ',
-    tech_stack: [
-      "React",
-      "Redux",
-      "Firebase Auth",
-      "YouTube API",
-      "Sass",
-      "Bootstrap",
-    ],
-  },
-  {
-    id: 8,
-    name: "Football App",
-    image_path: "/images/football.png",
-    deployed_url: "https://o-my-goal.web.app/",
-    github_url: "https://github.com/Dey-Sumit/football-app",
-    category: ["react"],
-    description:
-      "o my goal replica where an user can keep an eye on his favorite club.This app will keep providing \n all the statistics of that club.all the fans can also chat ",
-    tech_stack: ["React", "Redux", "Firebase Auth", "API", "Sass", "Bootstrap"],
+      "Visualization of a celluar automation devised by John Horton Conway",
+    tech_stack: ["React", "TypeScript"],
   },
 ]
 

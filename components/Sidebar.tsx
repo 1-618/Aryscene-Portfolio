@@ -1,6 +1,7 @@
 import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
-import { GiTie } from "react-icons/gi";
 import { GoLocation } from "react-icons/go";
+import { CgMail } from "react-icons/cg";
+import { BsPhone } from "react-icons/bs";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 
@@ -13,7 +14,7 @@ const Sidebar = () => {
 
   return (
     <>
-      <Image
+     {/* <Image
         src="/../public/portfolio-pic.jpg"
         alt="avatar"
         className="mx-auto border rounded-full "
@@ -21,12 +22,15 @@ const Sidebar = () => {
         width="128px"
         layout="intrinsic"
         quality="100"
-      />
-      <h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan">
-        <span className="text-green ">Sumit</span> Dey
+     />*/}
+     <br className="h-100"/>
+     <br className="h-100"/>
+     <br className="h-100"/>
+      <h3 className="my-4 text-3xl font-medium tracking-wider font-Patua">
+        <span className="text-orange font-Patua ">Aryscene</span> Violabian
       </h3>
-      <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200 dark:bg-black-500">
-        Web Developer
+      <p className="px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200 dark:bg-black-500 font-Poppins">
+        Software Developer
       </p>
       {/* Resume */}
       <a
@@ -34,19 +38,15 @@ const Sidebar = () => {
         download="Sumit Dey Resume.pdf"
         className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500"
       >
-        <GiTie className="w-6 h-6" />
-        <span>Download Resume</span>
+        <span className="hover:text-yellow font-Poppins">Download Resume</span>
       </a>
 
       {/* Socials */}
-      <div className="flex justify-around w-9/12 mx-auto my-5 text-green md:w-full ">
-        <a href="https://www.youtube.com/channel/UClW8d1f5m0QAE_Ig024EP6A">
-          <AiFillYoutube className="w-8 h-8 cursor-pointer" />
-        </a>
-        <a href="https://www.linkedin.com/in/sumit-dey-4a04431a9/" >
+      <div className="flex justify-center w-9/12 mx-auto my-5 text-yellow md:w-full ">
+        <a href="https://www.linkedin.com/in/aryscene-violabian-7a9aa6128/" className="mr-2 hover:text-orange">
           <AiFillLinkedin className="w-8 h-8 cursor-pointer" />
         </a>
-        <a href="https://www.instagram.com/_sumax__/">
+        <a href="https://github.com/1-618 " target="_blank" rel="noreferrer" className="ml-2 hover:text-orange">
           <AiFillGithub className="w-8 h-8 cursor-pointer" />{" "}
         </a>
       </div>
@@ -56,28 +56,23 @@ const Sidebar = () => {
         className="py-4 my-5 bg-gray-200 dark:bg-dark-200 dark:bg-black-500"
         style={{ marginLeft: "-1rem", marginRight: "-1rem" }}
       >
-        <div className="flex items-center justify-center">
-          <GoLocation className="mr-2" /> <span>Kolkata,India </span>
+        <div className="flex items-center justify-center font-Poppins">
+          <GoLocation className="mr-2" /> <span>Durban, South Africa </span>
         </div>
-        <p className="my-2 "> code.sumax@gmail.com </p>
-        <p className="my-2"> 8514961665 / 8640960375 </p>
-      </div>
-
-      {/* Email Button */}
-
-      <button
-        className="w-8/12 px-5 py-2 text-white bg-black rounded-full cursor-pointer bg-gradient-to-r from-green to-blue-500 hover:scale-105 focus:outline-none"
-        onClick={() => window.open("mailto:code.sumax@gmail.com")}
-      >
-        Email me
-      </button>
-      <button
-        onClick={changeTheme}
-        className="w-8/12 px-5 py-2 my-4 text-white bg-black rounded-full cursor-pointer bg-gradient-to-r from-green to-blue-500 focus:outline-none hover:scale-105 "
-      >
-        {/* //TODO remove bg black */}
-        Toggle Theme
-      </button>
+        <br></br>
+        <div className="flex items-center justify-center font-Poppins">
+        <CgMail className="mr-2"/> <span>aryscene@gmail.com</span>
+        </div>
+        <br></br>
+        <div className="flex items-center justify-center font-Poppins">
+        <BsPhone className="mr-2"/> <span>060 558 8167</span>
+        </div>
+      </div>  
+      <br></br> 
+      <br></br>
+      <h6 className="my-4 font-mono text-xs font-semibold tracking-wider font-Roboto">
+        <span className="italic text-red">Built with Next.js, Typescript and Tailwind</span>
+      </h6> 
     </>
   );
 };

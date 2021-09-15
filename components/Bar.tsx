@@ -22,9 +22,10 @@ const Bar: FunctionComponent<{ value: ISkill }> = ({
     }
   }
   return (
+    <>
     <div className="my-2 text-white bg-gray-300 rounded-full dark:bg-dark-300 dark:bg-black-500">
       <motion.div
-        className="flex items-center px-4 py-1 rounded-full bg-gradient-to-r from-green to-blue-500"
+        className="flex items-center px-4 py-1 rounded-full bg-gradient-to-r from-red to-yellow"
         style={{
           width: bar_width,
         }}
@@ -32,9 +33,11 @@ const Bar: FunctionComponent<{ value: ISkill }> = ({
         initial="initial"
         animate="animate"
       >
-        <Icon className="mr-3" /> {name}
+        <Icon className="mr-3 h-15 font-Poppins"/> {name}
       </motion.div>
     </div>
+    
+    </>
   );
 };
 export default Bar;

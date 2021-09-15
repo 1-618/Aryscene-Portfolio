@@ -12,7 +12,7 @@ const NavItem: FunctionComponent<{
       <Link href={route}>
          <a>
             <span
-               className='mx-2 cursor-pointer hover:border-b-4 hover:text-green'
+               className='mx-2 cursor-pointer hover:border-b-4 hover:text-yellow font-Patua'
                onClick={() => setActive(name)}>
                {name}
             </span>
@@ -30,12 +30,12 @@ const Navbar = () => {
    useEffect(() => {
       if (pathname === '/') setActive('About')
       else if (pathname === '/projects') setActive('Projects')
-      else if (pathname === '/resume') setActive('Resume')
+      else if (pathname === '/stack') setActive('Stack')
    }, [])
 
    return (
       <div className='flex items-center justify-between px-5 py-3 my-3'>
-         <span className='text-xl font-bold border-b-4 md:text-2xl border-green'>
+         <span className='text-xl font-bold border-b-4 md:text-2xl border-red font-Patua'>
             {active}
          </span>
 
@@ -49,8 +49,8 @@ const Navbar = () => {
             <NavItem
                active={active}
                setActive={setActive}
-               name='Resume'
-               route='/resume'
+               name='Stack'
+               route='/stack'
             />
             <NavItem
                active={active}
