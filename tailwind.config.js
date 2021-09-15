@@ -10,16 +10,6 @@ module.exports = {
      boxShadow: {
         'custom-light': '0 0 10px #313131',
         'custom-dark': '5px 5px 10px #0a0c0e, -5px -5px -10px #14161c',
-        //'custom-dark':  '0px 8px 32px 0 rgba( 31, 38, 135, 0.37 )'
-     },
-     backGround: {
-       'custom-dark':'#bbd2c5',
-     },
-     backdropFilter: {
-        'custom-dark': 'blur( 10px )',
-     },
-     border: {
-       'custom-dark':'1px solid rgba( 255, 255, 255, 0.18 )'
      },
 
     extend: {
@@ -47,9 +37,6 @@ module.exports = {
   variants: {
     extend: {
       boxShadow:["dark"],
-      backGround:["dark"],
-      backdropFilter:["dark"],
-      border:["dark"],
     },
   },
   plugins: [],
