@@ -7,8 +7,8 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,100;1,400
-        &family=Roboto+Mono:ital,wght@1,200&display=swap" rel="stylesheet"/>
+        <link href={`https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,100;1,400
+        &family=Roboto+Mono:ital,wght@1,200&display=swap`} rel="stylesheet"/>
         
         </Head>
         <body className='bg-fixed bg-gradient-to-r from-green to-blue-400 dark:from-dark-500 dark:to-dark-700 dark:text-white'>
