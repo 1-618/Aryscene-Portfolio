@@ -66,7 +66,7 @@ export const languages:ISkill[] = [
       {
         Icon: SiNextDotJs,
         name: "Next.js",
-        level: "60",
+        level: "66",
       },
       {
         Icon: SiNodeDotJs,
@@ -75,7 +75,7 @@ export const languages:ISkill[] = [
       },
       {
         Icon: SiMongodb,
-        name: "MongoDB native + mongoose",
+        name: "MongoDB",
         level: "65",
       },
       {
@@ -85,7 +85,7 @@ export const languages:ISkill[] = [
       },
       {
         Icon: SiGit,
-        name: "Git version control ",
+        name: "Git",
         level: "55",
       },
       {
@@ -115,7 +115,7 @@ export const tools: ISkill[] = [
       {
         Icon: SiGraphql,
         name: "GraphQl",
-        level: "30",
+        level: "40",
       },
       {
         Icon: SiPostgresql,

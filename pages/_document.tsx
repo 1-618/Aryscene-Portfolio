@@ -11,7 +11,7 @@ class MyDocument extends Document {
         &family=Roboto+Mono:ital,wght@1,200&display=swap`} rel="stylesheet"/>
         
         </Head>
-        <body className='bg-fixed bg-gradient-to-r from-green to-blue-400 dark:from-dark-500 dark:to-dark-700 dark:text-white'>
+        <body className='bg-fixed bg-gradient-to-r from-red to-yellow dark:from-dark-500 dark:to-dark-700 dark:text-white'>
           <Main />
           <NextScript />
         </body>

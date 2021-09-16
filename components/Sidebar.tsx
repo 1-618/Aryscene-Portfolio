@@ -34,8 +34,8 @@ const Sidebar = () => {
       </p>
       {/* Resume */}
       <a
-        href="/assets/Sumit Dey Resume.pdf"
-        download="Sumit Dey Resume.pdf"
+        href="/assets/aryscene-simple-cv.pdf"
+        download="aryscene-simple-cv.pdf"
         className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500"
       >
         <span className="hover:text-yellow font-Poppins">Download Resume</span>
@@ -71,7 +71,7 @@ const Sidebar = () => {
       <br></br> 
       <br></br>
       <h6 className="my-4 font-mono text-xs font-semibold tracking-wider font-Roboto">
-        <span className="italic text-red">Built with Next.js, Typescript and Tailwind</span>
+        <span className="italic text-red">Built with Next.js, Typescript and Tailwindcss</span>
       </h6> 
     </>
   );
