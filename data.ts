@@ -150,7 +150,7 @@ export const projects:IProject[] = [
     name: "Crypto gazer",
     description:
       "A simple app that displays up-to-date crypto market data along with a filter-search feature",
-    image_path: "/images/cryptogazer.png",
+    image_path: "/images/crypto-gazer.png",
     deployed_url: "https://elated-wiles-fa9b9c.netlify.app/",
     github_url: "https://github.com/1-618/crypto-gazer",
     category: ["react", "typescript"],
