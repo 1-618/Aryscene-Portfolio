@@ -41,8 +41,8 @@ const resume = () => {
       </div> 
     </div>
     <h6 className="my-4 text-xs tracking-wider font-extralight">
-        <span className="italic text-center font-Roboto"><b>*Disclaimer:</b> These ratings reflect my self evaluation, 
-        their accuracy is subject to my current level of awareness of the complexity of each the above technologies as relatively new developer.</span>
+        <span className="italic text-center font-Roboto"><b>*Disclaimer:</b> Ratings are a self evaluation, 
+        their accuracy is subject to my current awareness of the scope the above technologies as relatively new developer.</span>
     </h6>
         </motion.div>
     )

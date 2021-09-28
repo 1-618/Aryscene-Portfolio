@@ -154,7 +154,7 @@ export const projects:IProject[] = [
     deployed_url: "https://elated-wiles-fa9b9c.netlify.app/",
     github_url: "https://github.com/1-618/crypto-gazer",
     category: ["react", "typescript"],
-    tech_stack: ["React", "TypeScript"],
+    tech_stack: ["React", "TypeScript", "Axios"],
   },{
     id: 2,
     name: "KWIZZ-MEE! game",
@@ -164,15 +164,15 @@ export const projects:IProject[] = [
     category: ["react", "typescript", "node"],
     description:
       "A trivia game with 10 multiple choice questions from the Open trivia api",
-    tech_stack: ["React", "Typescript", "Node.js", "Express"],
+    tech_stack: ["React", "Typescript", "Node.js", "Express", "Axios"],
   },
 
   {
     id: 3,
     name: "Blog-chain",
-    image_path: "/images/kwizz-mee.jpg",
-    deployed_url: "https://zen-varahamihira-059069.netlify.app/",
-    github_url: "https://github.com/1-618/kwizz-mee-client",
+    image_path: "/images/blog-chain.png",
+    deployed_url: "https://blog-chain-frontend.herokuapp.com/",
+    github_url: "https://github.com/1-618/Game-of-life",
     category: ["node", "mongo", "react", "typescript"],
     description:
       "An open blog where anyone can sign up and post their thoughts on crypto",
@@ -183,19 +183,20 @@ export const projects:IProject[] = [
       "MongoDB",
       "Firebase Auth",
       "Reactstrap",
+      "react-draft-wysiwyg"
     ],
   },
 
   {
     id: 4,
     name: "Game of Life",
-    image_path: "/images/kwizz.jpg",
-    deployed_url: "https://zen-varahamihira-059069.netlify.app/",
+    image_path: "/images/game.png",
+    deployed_url: "https://lucid-thompson-d55d1d.netlify.app/",
     github_url: "https://github.com/1-618/kwizz-mee-client",
     category: ["react", "typescript"],
     description:
       "Visualization of a celluar automation devised by John Horton Conway",
-    tech_stack: ["React", "TypeScript"],
+    tech_stack: ["React", "TypeScript", "Material UI", "Immer.js"],
   },
 ]
 

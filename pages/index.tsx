@@ -9,7 +9,7 @@ const index = () => {
     <motion.div className='flex flex-col flex-grow px-6 pt-1' variants={routeAnimation} initial="initial" animate="animate" exit="exit">
       <h5 className='my-3 font-normal font-Poppins'>
        I am a recent graduate with a BCom in Strategic brand management, I began teaching myself to code while pursuing
-       my degree because I noticed that software lies at the core of all my personal intersets.
+       my degree because I noticed that software lies at the core of all my personal interests.
       Some of which are: philosophy, particularly Technological progress and human nature , Digital brands and DeFi.
         </h5>
         <div className='flex-grow p-4 mt-5 bg-gray-400 dark:bg-dark-100'style={{marginLeft:'-1.5rem', marginRight:'-1.5rem'}}>
