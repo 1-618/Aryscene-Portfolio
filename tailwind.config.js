@@ -5,7 +5,7 @@ module.exports = {
     fontFamily: {
       'Poppins': ['Poppins'],
       'Roboto': ['Roboto Mono'],
-      'Patua': ['Patua One']
+      'Patua': ['Open Sans']
      },
      boxShadow: {
         'custom-light': '0 0 10px #313131',

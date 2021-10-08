@@ -51,12 +51,12 @@ export const languages:ISkill[] = [
     {
         Icon: SiJavascript,
         name: "JavaScript",
-        level: "100",
+        level: "90",
       },
       {
         Icon: SiPython,
         name: "Python",
-        level: "90",
+        level: "75",
       },
       {
         Icon: SiReact,
@@ -81,7 +81,7 @@ export const languages:ISkill[] = [
       {
         Icon: SiWordpress,
         name: "Wordpress",
-        level: "75",
+        level: "50",
       },
       {
         Icon: SiGit,
@@ -192,7 +192,7 @@ export const projects:IProject[] = [
     name: "Game of Life",
     image_path: "/images/game.png",
     deployed_url: "https://lucid-thompson-d55d1d.netlify.app/",
-    github_url: "https://github.com/1-618/kwizz-mee-client",
+    github_url: "https://https://github.com/1-618/Game-of-life",
     category: ["react", "typescript"],
     description:
       "Visualization of a celluar automation devised by John Horton Conway",
