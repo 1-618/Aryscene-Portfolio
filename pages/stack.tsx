@@ -40,7 +40,7 @@ const resume = () => {
           </div>
       </div> 
     </div>
-    <h6 className="my-4 text-xs tracking-wider font-extralight">
+    <h6 className="my-4 text-xs font-light tracking-wider">
         <span className="italic text-center font-Roboto"><b>*Disclaimer:</b> Ratings are a self evaluation, 
         their accuracy is subject to my current awareness of the scope the above technologies as relatively new developer.</span>
     </h6>

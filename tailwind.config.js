@@ -15,13 +15,13 @@ module.exports = {
     extend: {
       colors: {
         orange: {
-          DEFAULT: '#F37335',
+          DEFAULT:'#b29f94'/*'#F37335'*/,
         },
         yellow: {
-          DEFAULT: '#FDC830',
+          DEFAULT: '#DBD4B4'/*'#FDC830'*/,
         },
         red: {
-          DEFAULT: '#dd1818',
+          DEFAULT: '#94716B'/*'#dd1818'*/,
         },
         dark: {
           DEFAULT: "#010101",
