@@ -34,8 +34,8 @@ const Sidebar = () => {
       </p>
       {/* Resume */}
       <a
-        href="/assets/aryscene-simple-cv.pdf"
-        download="aryscene-simple-cv.pdf"
+        href="/assets/AryCV2021_merged.pdf"
+        download="AryCV2021_merged.pdf"
         className="flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200 dark:bg-black-500"
       >
         <span className="hover:text-red font-Poppins">Download Resume</span>
